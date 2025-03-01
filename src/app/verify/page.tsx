@@ -24,7 +24,7 @@ const Verify = () => {
     }
 
   return (
-    <div className='fillinscreen grad back w-full h-screen flex justify-center items-center bg-black'>
+    <div className='rounded-lg h-[50%] mt-6 flex justify-center items-center bg-yellow-400 w-[56%]'>
     <form method='POST' className='grad front w-1/4 h-2/3 gap-4  rounded-md  p-6 flex flex-col justify-center items-center' onSubmit={
       handleSubmit
     }>
