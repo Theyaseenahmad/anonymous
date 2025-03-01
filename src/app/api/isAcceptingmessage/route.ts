@@ -6,8 +6,6 @@ import authOptions from "../auth/[...nextauth]/options";
 import connectDb from "@/lib/dbConnect";
 
 export async function GET(req:Request){
-
-    await connectDb()
     const session = await getServerSession(authOptions)
 
 
