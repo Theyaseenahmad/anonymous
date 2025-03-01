@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import axios, { AxiosError } from "axios";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
-import { apiResponse } from "../../../types/apiResponse";
+import { apiResponse } from "../../types/apiResponse";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -86,7 +86,7 @@ const Signup = () => {
     }
 
 
-  },[debounceUsername])
+  },[debounceUsername,toast])
 
   const form = useForm<z.infer<typeof signUpSchema>>({
     resolver: zodResolver(signUpSchema),

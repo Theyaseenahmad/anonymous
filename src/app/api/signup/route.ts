@@ -1,4 +1,4 @@
-import sendverificationEmail from "../../../../helpers/sendVerificationEmail";
+import sendverificationEmail from "../../../helpers/sendVerificationEmail";
 import connectDb from "@/lib/dbConnect";
 import { UserModel } from "@/models/user";
 import bcryptjs from 'bcryptjs'
