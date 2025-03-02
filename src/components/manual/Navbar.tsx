@@ -18,7 +18,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link href={'/'} className='flex items-center gap-2'>
         <div className='size-8 overflow-hidden rounded-lg'>
-          <img className='w-full h-full object-cover' src="https://simg.nicepng.com/png/small/376-3761246_pages-jaunes-logo.png" alt="Logo" />
+          <img className='w-full h-full object-cover' src="/unknown.png" alt="Logo" />
         </div>
         <h2 className='text-lg font-bold'>ANONYMOUS</h2>
       </Link>
