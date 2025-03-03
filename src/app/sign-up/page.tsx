@@ -15,6 +15,7 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import "../globals.css";
+import { Loader2 } from "lucide-react";
 
 const Signup = () => {
 
@@ -154,7 +155,7 @@ const Signup = () => {
       
 <p className='text-slate-800 text-xs font-bold'>Accept our terms and conditions, Learn More.</p>
       <Button className="p-4" type="submit" disabled={isSubmitting}>{
-      isSubmitting ? (<>signing up !</>):('signup')
+      isSubmitting ? (<Loader2 className='animate-spin'></Loader2>):('signup')
      }</Button>
     </form>
   </Form>

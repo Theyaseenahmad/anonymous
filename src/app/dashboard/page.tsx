@@ -20,16 +20,18 @@ const Dashboard = () => {
   }, [session, router]);
 
   return (
-    <div className='flex justify-center items-center h-[60%]  mt-6'>
-      <div className='w-full max-w-3xl mx-auto ml-4 p-4 md:p-6 bg-blue-700 text-white font-bold rounded-lg  flex flex-col items-center h-[60%] mt-6'>
-        <h1 className='text-xl md:text-2xl'>User Dashboard</h1>
-        <div className='flex flex-col gap-4 mt-4 w-full'>
-          <Url />
-          <AcceptSwitch />
-          <MessagesBlock />
-        </div>
+    <div className='flex justify-center items-center h-[90%] md:h-[60%] md:mt-6'>
+  <div className='w-full max-w-3xl mx-auto ml-4 p-2 md:p-6 bg-blue-700 text-white font-bold rounded-lg flex flex-col items-center md:h-[60%] h-[80vh] md:mt-6 mt-8 overflow-hidden'>
+    <h1 className='text-xl md:text-2xl'>User Dashboard</h1>
+    <div className='flex flex-col gap-4 mt-4 w-full flex-1 overflow-hidden'>
+      <Url />
+      <AcceptSwitch />
+      <div className="flex-1 w-full overflow-y-auto">
+        <MessagesBlock />
       </div>
     </div>
+  </div>
+</div>
   )
 }
 

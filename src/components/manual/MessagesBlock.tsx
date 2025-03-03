@@ -26,13 +26,12 @@ const MessagesBlock = () => {
   
     getmsg();
   }, [session]);
+
+  console.log("messages",msgs);
   
-
-
-
-
+  
   return (
-    <div className='w-full flex gap-4 flex-wrap items-center justify-center  min-h-60 p-6 relative overflow-y-scroll'>
+    <div className="w-full flex gap-2 flex-wrap items-start justify-center p-6 relative overflow-y-scroll h-[60vh] max-h-[500px] sm:h-auto sm:max-h-none">
 
         <div className=' size-5 absolute left-1 top-1 rounded-lg flex items-center justify-center p-1 bg-green-600'>
         <RefreshCcw className=''/>

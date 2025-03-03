@@ -11,9 +11,6 @@ export async function GET(req:Request){
         await connectDb()
         const session = await getServerSession(authOptions)
 
-       
-        
-
     if(!session){
         return Response.json({
             suvccess:false,

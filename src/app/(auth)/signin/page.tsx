@@ -47,14 +47,23 @@ const Signin =  () => {
           identifier : data.identifier,
           password : data.password
         }
-  
+        
       )
+
+      
+      console.log("signInResult",signInResult);
   
       if(signInResult?.error){
-        throw Error("cannot signin")
+        if(signInResult.status == 401){
+          toast({
+            variant : 'destructive',
+            title:'Signin error',
+            description:"username or password is incorrect"
+          })
+        }
+        return;
       }
       else{
-        
         window.location.href ='/'
       }
     }
@@ -63,9 +72,9 @@ const Signin =  () => {
 
 
   return (
-    <div className='fillinscreen grad back w-full h-screen flex justify-center items-center '>
+    <div className='w-full h-screen flex justify-center items-center  '>
     <Form {...form}>
-    <form onSubmit={form.handleSubmit(submitFunc)} className='grad front w-3/4 h-4/6 gap-4  rounded-md p-6 flex flex-col justify-between  bg-yellow-400' >
+    <form onSubmit={form.handleSubmit(submitFunc)} className='grad front w-3/4 h-3/6 gap-4  rounded-md p-6 flex flex-col justify-between  bg-yellow-400' >
 
       <FormField
         name="identifier"

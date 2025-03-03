@@ -38,8 +38,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <Link href={'/signin'} className='px-4 py-2 text-white bg-blue-500 rounded-lg text-sm font-semibold'>Sign In</Link>
-            <Link href={'/sign-up'} className='px-4 py-2 text-white bg-blue-500 rounded-lg text-sm font-semibold'>Sign Up</Link>
+            <Link href={'/signin'} className='px-4 py-2 text-white bg-blue-500 rounded-lg text-sm font-semibold hover:bg-blue-800'>Sign In</Link>
+            <Link href={'/sign-up'} className='px-4 py-2 hover:bg-blue-800 text-white bg-blue-500 rounded-lg text-sm font-semibold'>Sign Up</Link>
           </>
         )}
       </div>

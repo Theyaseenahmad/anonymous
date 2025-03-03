@@ -27,7 +27,7 @@ export default function RootLayout({
       <Authprovider>
         <body className="grad">
           <Navbar />
-          <div className="w-full min-h-screen flex flex-col md:flex-row justify-between items-center overflow-hidden px-4 md:px-0 relative">
+          <div className="w-full h-screen flex flex-col md:flex-row justify-between items-center overflow-hidden px-4 md:px-0 relative">
             
             {/* Background Circles */}
             <div className="absolute -top-24 -left-24 w-48 h-48 md:w-64 md:h-64 bg-blue-500 rounded-full -z-20"></div>
@@ -41,7 +41,7 @@ export default function RootLayout({
             </div>
 
             {/* Right Content (Image) */}
-            <div className="w-full md:w-1/2 relative flex justify-center overflow-hidden">
+            <div className="w-full md:w-1/2 hidden md:flex lg:flex  relative  justify-center overflow-hidden">
               <div className="absolute -right-0 md:-right-20 -bottom-20 md:-bottom-40 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-yellow-400 rounded-full -z-20"></div>
               <img 
                 className="object-contain w-full max-w-xs md:max-w-full mx-auto" 
